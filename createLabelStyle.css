@@ -1,0 +1,203 @@
+/* --- Global Reset --- */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    font-family: "The Girl Next Door", cursive;
+    background: lightpink;
+    user-select: none;
+    cursor: url('Cursor.png'), auto;
+}
+
+.app {
+    padding: 12px;
+    height: 100vh;
+    display: grid;
+    grid-template-rows: auto auto 1fr;
+    overflow: visible; 
+}
+
+/* --- Top Header Navigation --- */
+.first_seg {
+    width: 100%;
+    height: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: visible; /* Prevents clipping the dropdown */
+}
+
+.top-part {
+    -webkit-app-region: drag;
+    color: white;
+    font-size: 27px;
+    font-weight: 600;
+    margin-left:20px;
+    text-align:end;
+}
+
+.icon_wrapper {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+
+.input_container {
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 15px; 
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+    overflow: visible;
+}
+
+.cont1 {
+    position: relative;
+    width: 100%;
+}
+
+.add_label {
+    height: 32px;
+    padding: 0 12px;
+    border-radius: 16px;
+    border: none;
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: 700;
+    width: 100%;
+    position: relative;
+    z-index: 2; /* Keeps input on top */
+}
+
+.add_label:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(148, 73, 87, 0.4);
+}
+
+
+.replaces_Text {
+    position: absolute;
+    top: 36px; /* Positioned just below the 32px input */
+    left: 15px;
+    height: 24px;
+    width: 80%;
+    background-color: white;
+    visibility: hidden;
+    color: #944957;
+    opacity: 0;
+    border-radius: 12px;
+    padding-left: 8px;
+    display: flex;
+    align-items: center;
+    font-size: 13px;
+    font-weight: 900;
+    transition: 0.4s ease;
+}
+.replaces_Text.show{
+  visibility: visible;
+  opacity: 0.5;
+}
+
+.dropdown_select_cont {
+    position: relative; 
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dropdown_select {
+    background-color: #944957;
+    cursor: url('Cursor.png'), auto;
+    height: 22px;
+    width: 22px;
+    border-radius: 50%;
+    border: 3px solid white;
+    transition: 0.3s ease;
+}
+
+.dropdown_options {
+    position: absolute;
+    top: 28px;
+    left: 50%;
+    transform: translateX(-50%) translateY(-5px);
+    background-color: white;
+    width: 26px;
+    height: 95px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    border-radius: 0 0 8px 8px;
+    opacity: 0;
+    visibility: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: 0.4s ease;
+    z-index: 100;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.dropdown_options.show {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(-50%) translateY(0);
+}
+.dropdown_options::-webkit-scrollbar{
+  display: none;
+}
+
+.option {
+    width: 18px;
+    height: 18px;
+    margin: 4px 0;
+    border-radius: 50%;
+    cursor: url('Cursor.png'), auto;
+    transition: 0.3s ease;
+    flex-shrink: 0;
+}
+
+.option:hover {
+    transform: scale(1.2);
+}
+
+/* --- Action Button --- */
+.create_button_cont {
+    margin-top: 20px; /* Space for the replaces_Text above it */
+    display: flex;
+    justify-content: center;
+    padding: 8px;
+    border-radius: 12px;
+    overflow: visible;
+}
+
+.create_button {
+    width: 120px;
+    height: 34px;
+    color: rgb(255, 134, 134);
+    background-color: #ffffff;
+    border-radius: 17px;
+    border: none;
+    font-size: 14px;
+    font-family: inherit;
+    font-weight: 600;
+    cursor: url('Cursor.png'), auto;
+    transition: 0.3s ease;
+}
+
+.create_button:hover {
+    color: white;
+    background-color: #944957;
+}
+
+.create_button:focus {
+    outline: none;
+}

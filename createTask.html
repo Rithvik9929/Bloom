@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Add To-Do Item</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=The+Girl+Next+Door&display=swap" rel="stylesheet">
+    
+
+    <link rel="stylesheet" href="addTaskStyle.css" />
+  </head>
+
+  <body>
+    <div class="app">
+      
+      <div class = "header"> 
+        <div class="draggable_header">Create To-do Item</div>
+          <div class="icon_wrapper">
+          <img class="minus_button" src="-Button.png" alt="minus button">
+          <img class="close_button" src="Xbutton.png" alt="close button">
+          
+        </div>
+      
+      </div>
+
+      <div class = "cont_add_task">
+        
+        <div class="input_container">
+            <input class = "add_todo">
+            <div class="label_dropdown">
+              <div class="dropdown_select">Default</div>
+              <div class="dropdown_options">
+ 
+              </div>
+            </div>
+        </div>
+        <div class="button_cont">
+            <button class="button label_button">Create Label</button>
+            <button class="button add_task">Add Task</button>
+        </div>
+        
+      </div>
+      
+    </div>
+
+    <script src="addTask.js"></script>
+    <script src="taskList.js"></script>
+  </body>
+</html>

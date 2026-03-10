@@ -1,0 +1,28 @@
+{
+  "name": "electron-app",
+  "version": "1.0.0",
+  "description": "Happy Birthday Mani!!",
+  "author": "Rithvik Sriram",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "dist": "electron-builder"
+  },
+  "dependencies": {
+    "@fullcalendar/core": "^6.1.20",
+    "@fullcalendar/daygrid": "^6.1.20",
+    "electron-store": "^8.2.0",
+    "node-ical": "^0.25.5"
+  },
+  "devDependencies": {
+    "electron-builder": "^26.8.1",
+    "electron": "^26.2.0"
+  },
+  "build": {
+    "appId": "com.bloom.app",
+    "productName": "Bloom",
+    "mac": {
+      "target": "dmg"
+    }
+  }
+}

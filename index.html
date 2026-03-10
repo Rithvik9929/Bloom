@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=The+Girl+Next+Door&display=swap" rel="stylesheet">
+
+    <title>Bloom</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <script src="https://cdn.jsdelivr.net/npm/@fullcalendar/core@6.1.8/index.global.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fullcalendar/daygrid@6.1.8/index.global.min.js"></script>
+  </head>
+
+  <body>
+    <div class="app">
+      <div class = "cont_left">
+        <div class = "main_bloom">
+          <div class = "title1">Bloom</div>
+          <div class = "title2"><img src="Bloom_logo.png" alt="Bloom Logo" width ="50px" height = "50px"></div>
+        </div>
+        <div class = "cont_task_bar">
+          <div class = "add_task">
+            <button class = "add_task_button"> Add To-do Item  </button>
+          </div>
+          <div class="task_list"></div>
+          <div></div>
+        </div>
+
+      </div>
+      <div class = "cont_calendar">
+        <div class = "top_bar_UI">
+          <div class = "simple_text"><span class="top_text">Made with Love &lt;3 </span></div>
+          <img class="minus_button" src="-Button.png" alt="minus button">
+          <img class="close_button" src="Xbutton.png" alt="close button">
+        </div>
+        <div class = "background_cont">
+          <div class="top-part-cont">
+            <div class="calendar_text">Overview for this month. . .</div>
+          <input class="calendar_url" type="url " placeholder="Enter Calendar URL">
+          <button class="load">Load</button>
+          </div>
+          
+          <div class="calendar"></div>
+        </div>
+      </div>
+    </div>
+    <div id="custom-cursor"></div>
+    <script src="taskList.js"></script>
+    <script src="calendar.js"></script>
+  </body>
+</html> 
