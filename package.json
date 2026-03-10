@@ -23,6 +23,7 @@
     "productName": "Bloom",
     "mac": {
       "target": "dmg"
-    }
+    },
+    "publish": null
   }
 }
