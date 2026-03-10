@@ -1,9 +1,0 @@
-directories:
-  output: dist
-  buildResources: build
-appId: com.bloom.app
-productName: Bloom
-mac:
-  target: dmg
-files: []
-electronVersion: 26.6.10
