@@ -23,17 +23,18 @@
     "appId": "com.bloom.app",
     "productName": "Bloom",
     "mac": {
-      "target": "dmg",
-      "arch": ["universal"]
-    },
+      "target": {
+        "target": "dmg",
+        "arch": ["universal"]
+      },
       "category": "public.app-category.utilities",
       "entitlements": "entitlements.mac.plist",
       "entitlementsInherit": "entitlements.mac.plist",
       "hardenedRuntime": true
-    ,
+    },
     "directories": {
       "output": "dist"
     },
     "publish": null
-}
+  }
 }
