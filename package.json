@@ -12,18 +12,25 @@
     "@fullcalendar/core": "^6.1.20",
     "@fullcalendar/daygrid": "^6.1.20",
     "electron-store": "^8.2.0",
-    "node-ical": "^0.25.5"
+    "node-ical": "^0.25.5",
+    "store": "^2.0.12"
   },
   "devDependencies": {
-    "electron-builder": "^26.8.1",
-    "electron": "^26.2.0"
+    "electron": "^26.6.10",
+    "electron-builder": "^26.8.1"
   },
   "build": {
     "appId": "com.bloom.app",
     "productName": "Bloom",
     "mac": {
-      "target": "dmg"
+      "target": "dmg",
+      "category": "public.app-category.utilities",
+      "entitlements": "entitlements.mac.plist",
+      "entitlementsInherit": "entitlements.mac.plist",
+      "hardenedRuntime": true
     },
-    "publish": null
-  }
+    "directories": {
+      "output": "dist"
+    }
+}
 }
