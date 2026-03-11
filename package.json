@@ -24,6 +24,7 @@
     "productName": "Bloom",
     "mac": {
       "target": "dmg",
+      "arch": ["universal"],
       "category": "public.app-category.utilities",
       "entitlements": "entitlements.mac.plist",
       "entitlementsInherit": "entitlements.mac.plist",
