@@ -5,6 +5,27 @@
     padding: 0;
 }
 
+
+.clos_button{
+  cursor: url('Cursor.png'), auto;
+  transition: box-shadow 0.1s ease, transform 0.2s;
+}
+
+
+.minu_button{
+  
+  cursor: url('Cursor.png'), auto;
+  transition: box-shadow 0.1s ease, transform 0.2s;
+  
+}
+
+.minu_button:hover{
+  transform: scale(1.05);
+}
+.clos_button:hover{
+  transform: scale(1.05);
+}
+
 body {
     width: 100vw;
     height: 100vh;

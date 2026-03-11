@@ -127,15 +127,22 @@ body {
 
 .close_button{
   cursor: url('Cursor.png'), auto;
-  transition: box-shadow 0.1s ease;
+  transition: box-shadow 0.1s ease, transform 0.2s;
 }
 
 
 .minus_button{
   
   cursor: url('Cursor.png'), auto;
-  transition: box-shadow 0.1s ease;
+  transition: box-shadow 0.1s ease, transform 0.2s;
   
+}
+
+.minus_button:hover{
+  transform: scale(1.05);
+}
+.close_button:hover{
+  transform: scale(1.05);
 }
 
 
@@ -165,6 +172,9 @@ body {
 }
 .dropdown_options{
   position:absolute;
+  max-height: 120px;
+  overflow-y: scroll;
+  overflow-x: hidden;
   background-color: white;
   width:100%;
   height:auto;
@@ -174,7 +184,9 @@ body {
   box-shadow: 0 4px 8px, rgba(148, 73, 87, 0.1);
   transform: translateY(-10px);
   transition: 0.6s ease;
-  overflow: hidden;
+}
+.dropdown_options::-webkit-scrollbar {
+  display: none;          
 }
 .option{
   border-style: solid;
@@ -199,7 +211,8 @@ body {
 .dropdown_options div{
   padding: 0px;
   font-size: 16px;
-  background-color: #944957
+  background-color: #944957;
+
 }
 .dropdown_options div_hover{
   background-color: #b97481;

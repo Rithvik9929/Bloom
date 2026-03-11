@@ -211,12 +211,7 @@ body {
 
 .fc-daygrid-day:hover {
   background-color: #ffe4e1; /* subtle hover highlight */
-  cursor: pointer;
-}
-
-.fc-daygrid-day-number {
-  font-weight: 700;
-  color: #944957;
+  cursor: url('Cursor.png'), auto;
 }
 
 /* Events */
@@ -329,7 +324,7 @@ body {
 
 .close_button{
   cursor: url('Cursor.png'), auto;
-  transition: box-shadow 0.1s ease;
+  transition: box-shadow 0.1s ease, transform 0.2s;
   margin: 5px;
   margin-bottom: 10px;
   -webkit-app-region: none;
@@ -340,12 +335,18 @@ body {
   border-radius:18px;
 
 }
+.minus_button:hover{
+  transform: scale(1.05);
+}
+.close_button:hover{
+  transform: scale(1.05);
+}
 
 
 .minus_button{
   
   cursor: url('Cursor.png'), auto;
-  transition: box-shadow 0.1s ease;
+  transition: box-shadow 0.1s ease, transform 0.2s;
   margin: 5px;
   margin-bottom: 10px;
   -webkit-app-region: none;

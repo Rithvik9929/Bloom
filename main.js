@@ -1,4 +1,5 @@
 const { app, BrowserWindow, ipcMain } = require("electron");
+app.commandLine.appendSwitch('no-sandbox'); 
 const path = require('path');
 const Store = require('electron-store');
 const store = new Store();
@@ -16,7 +17,7 @@ const ical = require("node-ical")
 
 ipcMain.handle("getCalendarEvents", async () => {
 
-  const url = store.get("calendarURL")
+  const url = store.get("calendarURL")?.replace(/^webcal:\/\//, "https://");
 
   if (!url) return []
 
