@@ -1,5 +1,4 @@
 const { app, BrowserWindow, ipcMain } = require("electron");
-app.commandLine.appendSwitch('no-sandbox'); 
 const path = require('path');
 const Store = require('electron-store');
 const store = new Store();
